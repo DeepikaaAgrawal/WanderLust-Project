@@ -1,6 +1,6 @@
 Wanderlust
 
-https://wanderlust-project-1-brx2.onrender.com/listings
+https://wanderlust-project-1-brx2.onrender.com
 Project Description:
 
 Wanderlust is a web application designed for travel enthusiasts to explore new destinations, cultures, and experiences. Built using Node.js, Express.js, and MongoDB, this application allows users to discover and share their travel experiences.
