@@ -262,4 +262,45 @@ body{
   }
 }
 
+.listing-title {
+  padding-left: 0.5rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.listing-card-body {
+  padding: 0 !important;
+}
+
+.listing-card-text {
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  padding: 0 0.5rem;
+}
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.add-btn,
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.show-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
 
