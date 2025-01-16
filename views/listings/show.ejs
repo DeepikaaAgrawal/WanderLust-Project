@@ -27,10 +27,6 @@
                             &#8377;
                             <%=listing.price.toLocaleString("en-In")%>
                         </p>
-                        <p class="listing-card-text">
-                            <b>Category:</b>
-                            <%= listing.category %>
-                        </p>
                         <p class="listing-card-text"><b>Location:&nbsp;&nbsp;</b><i
                                 class="fa-solid fa-location-dot">&nbsp;</i>
                             <%= listing.location %>
@@ -39,6 +35,15 @@
                             <%= listing.country %>
                         </p>
                     </div>
+
+ <div class="show-btns d-flex flex-column flex-md-row justify-content-center gap-2 gap-md-3">
+                    <form action="/listings/<%=listing._id%>/reservelisting" method="GET">
+                        <button class="btn btn-success reserve-btn">Reserve</button>
+                    </form>
+                </div>
+
+
+
                 </div>
     <br />
       <% if(currUser && currUser._id.equals(listing.owner._id)){ %>
