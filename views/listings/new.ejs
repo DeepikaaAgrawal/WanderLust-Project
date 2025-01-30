@@ -26,29 +26,46 @@
 
 
      <div class="row">
-      <div class="mb-3 col-md-4">
+      <div class="mb-3 col-md-6">
         <lable for="price" class="form-lable">Price</lable>
         <input name="listing[price]" placeholder="1200" class="form-control" required />
         <div class="invalid-feedback">
                Please enter a valid Price 
         </div>
+       </div>
+            <div class="mb-3 col-md-6">
+          <label for="category" class="form-label " >Choose a category</label>
+          <select class="form-select form-select-sm" aria-label="Small select example" name="listing[category]">
+              <option value="Trending">Trending</option>
+              <option value="Mountains">Mountains</option>
+              <option value="Camping">Camping</option>
+              <option value="Rooms">Rooms</option>
+              <option value="Iconic Cities">Iconic Cities</option>
+              <option value="Amazing Nature">Amazing Nature</option>
+              <option value="Farms">Farms</option>
+              <option value="Arctic">Arctic</option>
+              <option value="Boats">Boats</option>
+              <option value="Domes">Domes</option>
+          </select>    
       </div>
-       <div class="mb-3 col-md-8"> 
+      </div>
+<div class="row">
+       <div class="mb-3 col-md-6"> 
         <lable for="country" class="form-lable">Country</lable>
         <input name="listing[country]" placeholder="India" type="text" class="form-control" required/>
         <div class="invalid-feedback">
           Please enter a valid country
         </div>
       </div>
-    </div>
-      <div class="mb-3">
+  
+      <div class="mb-3 col-md-6">
       <lable for="location" class="form-lable">Location</lable>
       <input name="listing[location]"placeholder="enter location"type="text" class="form-control" required/>
       <div class="invalid-feedback">
         Please enter a valid location
       </div>
       </div>
-      
+        </div>
       <button class="btn btn-dark add-btn mt-3">Add</button>
       <br><br>
     </form>
