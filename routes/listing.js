@@ -7,7 +7,9 @@ const listingController=require("../controllers/listings.js");
 const multer  = require('multer');
 const {storage}=require("../cloudConfig.js");
 const upload = multer({ storage })
+const { route } = require("./user.js");
 
+router.get("/filter/:id",wrapAsync(listingController.filter));
 
 router.get("/search", wrapAsync(listingController.searchResult));
 router
