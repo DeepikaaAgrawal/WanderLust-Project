@@ -35,22 +35,41 @@
                      />
                 </div>
                 <div class="row">
-                    <div class="mb-3 col-md-4">
+                    <div class="mb-3 col-md-6">
                         <lable for="price" class="form-label">Price</lable>
                         <input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control"
                             required />
                     </div>
-                    <div class="mb-3 col-md-8">
+                      <div class="mb-3 col-md-6">
+                        <label for="category" class="form-label " >Choose a category</label>
+                        <select class="form-select form-select-sm" aria-label="Small select example" name="listing[category]" value="<%= listing.category %>" >
+                            <option value="Trending">Trending</option>
+                            <option value="Mountains">Mountains</option>
+                            <option value="Camping">Camping</option>
+                            <option value="Rooms">Rooms</option>
+                            <option value="Iconic Cities">Iconic Cities</option>
+                            <option value="Amazing Nature">Amazing Nature</option>
+                            <option value="Farms">Farms</option>
+                            <option value="Arctic">Arctic</option>
+                            <option value="Boats">Boats</option>
+                            <option value="Domes">Domes</option>
+                        </select>    
+                   </div>
+                  </div>
+                <div class="row">
+                    <div class="mb-3 col-md-6">
                         <lable for="country" class="form-label">Country</lable>
                         <input name="listing[country]" value="<%= listing.country %>" type="text" class="form-control"
                             required />
+                          <div class="invalid-feedback">country name should be valid</div>
                     </div>
-                </div>
-                <div class="mb-3">
+                <div class="mb-3 col-md-6">
                     <lable for="location" class="form-label">Location</lable>
                     <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control"
                         required />
+                      <div class="invalid-feedback">Location should be valid</div>
                 </div>
+               </div>  
                 <button class="btn btn-dark edit-btn mt-3">Edit</button>
                 <br><br>
             </form>
