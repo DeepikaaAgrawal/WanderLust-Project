@@ -73,7 +73,16 @@ module.exports.renderNewForm=(req, res) => {
    req.flash("success","Listing Updated!");
   res.redirect(`/listings/${id}`);
 };
-
+module.exports.filter = async(req,res,next)=>{
+  let {id} = req.params;
+  let allListings = await Listing.find({category: id});
+  if(allListings.length != 0){
+      res.render("listings/index.ejs", { allListings });
+  }else{
+      req.flash("error",`No listing with ${id}`);
+      res.redirect("/listings")
+  }
+}
 module.exports.destroyListing=async (req, res) => {
     let { id } = req.params;
     let deletedListing = await Listing.findByIdAndDelete(id);
