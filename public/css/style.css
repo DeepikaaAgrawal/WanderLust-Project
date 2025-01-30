@@ -168,7 +168,7 @@ body{
   .tax-info {
     display: none;
   }
-  .tax-toggle {
+/*   .tax-toggle {
     border: 1px solid black;
     border-radius: 1rem;
     height: 3.25rem;
@@ -179,7 +179,19 @@ body{
     width: fit-content;
     margin-top: 0.8rem;
     align-items: center;
-  }
+  } */
+.tax-toggle {
+  border: 0.1rem solid #a6a6a6;
+  border-radius: 1rem;
+  height: 3rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  margin-top: 0.9rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
 
   a {
     text-decoration: none;
